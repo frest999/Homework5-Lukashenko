@@ -1,0 +1,62 @@
+.title-kinds-expertise{
+  font-family: $roboto-font;
+  font-size: $title-kinds-expertise;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.kinds-expertise {
+  @include flexbox;
+  flex-wrap: wrap;
+  li {
+    max-width: 33%;
+    padding: 35px 30px 45px;
+    text-align: center;
+    }
+  }
+
+@each $kind in $expertise-list {
+  .#{$kind}-expertise:before {
+    content: '';
+    background: url(../../img/expertise/#{$kind}.png) no-repeat;
+    display: block;
+    height: 50px;
+    margin-bottom: 30px;
+    background-position: center;
+  }
+}
+
+.kinds-expertise li:nth-child(1){
+  border-right: $inside-border;
+}
+
+.kinds-expertise li:nth-child(2){
+  border-right: $inside-border;
+}
+
+.kinds-expertise li:nth-child(4){
+  border-right: $inside-border;
+  border-top: $inside-border;
+}
+
+.kinds-expertise li:nth-child(5){
+  border-right: $inside-border;
+  border-top: $inside-border;
+}
+.kinds-expertise li:nth-child(6){
+  border-top: $inside-border;
+}
+
+.kinds-expertise li:nth-child(3n+9){
+  border-top: $inside-border;
+}
+
+.kinds-expertise li:nth-child(3n+8){
+  border-right: $inside-border;
+  border-top: $inside-border;
+}
+
+.expertise-section li:nth-child(3n+7){
+  border-right: $inside-border;
+  border-top: $inside-border;
+}

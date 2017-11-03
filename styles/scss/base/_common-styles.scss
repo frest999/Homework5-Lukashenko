@@ -1,0 +1,60 @@
+.content{
+  @include content;
+}
+
+.section-btn{
+  @include section-btn;
+}
+
+.center-content{
+  @include center-content;
+}
+
+.titles{
+  font-size: $title-size;
+  font-family: $title-font;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.main-title{
+  font-size: $main-title-size;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.underline-title{
+  @include underline-title($color-btn);
+}
+
+.underline-title-dark{
+  @include underline-title($dark-border-line);
+}
+
+.block-text{
+  font-size: $block-text-size;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.white-title, .white-text{
+  color: $white-text;
+}
+
+.dark-title, .dark-text{
+  color: $dark-text;
+}
+
+.section-padding{
+  padding: 70px 0;
+}
+
+.bg-overlay{
+  background: url(../../img/overlay-welcome.png) no-repeat center top;
+  @include full-bg-img;
+}
+
+.section-headers{
+  text-align: center;
+  margin-bottom: 50px;
+}

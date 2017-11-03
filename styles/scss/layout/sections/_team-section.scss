@@ -1,0 +1,32 @@
+.team-section{
+  background: url(../../img/team-bg.png) no-repeat center top;
+  @include full-bg-img;
+}
+
+.team-list{
+  @include flex-between;
+  margin-bottom: 50px;
+  height: 310px;
+  li{
+    width: 23%;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #7c7991;
+  }
+}
+.team-list-names, .team-list-post{
+  color: $white-text;
+  font-family: $roboto-font;
+  font-size: $block-text-size;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.team-list-post{
+  font-size: $block-text-size - 2px;
+}
+
+.footer-section{
+  @include flexbox;
+  flex-direction: column;
+  align-items: center;
+}

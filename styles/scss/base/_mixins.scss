@@ -1,0 +1,75 @@
+@mixin hidden-text {
+  position: absolute;
+  left:0;
+  text-indent: -9999px;
+}
+
+@mixin full-bg-img{
+  height: $display-height;
+  background-size: cover;
+}
+
+@mixin section-btn{
+  border: 1px solid $color-btn;
+  color: $color-btn;
+  font-family: $btn-font;
+  padding: 10px 20px;
+
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid #060309;
+  }
+  &:active{
+    color: #060309;
+  }
+}
+
+@mixin content{
+  width: $content-width;
+  margin: 0 auto;
+}
+
+@mixin center-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 130px;
+}
+
+@mixin underline-title($color-border){
+  &:after{
+    content: '';
+    display: block;
+    width: 50px;
+    border-bottom: 2px solid $color-border;
+    margin: 20px auto;
+  }
+}
+
+@mixin flex-center{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+ justify-content: center;
+}
+
+@mixin flex-between{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexbox{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}

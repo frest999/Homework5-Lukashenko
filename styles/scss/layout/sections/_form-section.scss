@@ -1,0 +1,48 @@
+.news-client-content{
+  @include flex-between;
+}
+
+.good-news{
+  width: 450px;
+  form {
+    @include flexbox;
+    flex-direction: column;
+    input, textarea{
+      border: 1px solid $expertise-border;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    textarea{
+      resize: none;
+      height: 200px;
+    }
+    button{
+      align-self: flex-start;
+    }
+  }
+}
+
+.our-client{
+  width: 400px;
+  @include flex-between;
+  flex-wrap: wrap;
+  li{
+    margin-bottom: 30px;
+  }
+  h3{
+    @include hidden-text;
+  }
+}
+
+@each $client in $our-client{
+  .client-#{$client} {
+    background: url(../../img/our-client/#{$client}.png) no-repeat;
+    display: block;
+    width: 165px;
+    height: 70px;
+  }
+}
+
+.title-client{
+  margin-bottom: 30px;
+}

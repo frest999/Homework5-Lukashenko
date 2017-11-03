@@ -1,0 +1,45 @@
+.our-works-header{
+  padding-bottom: 50px;
+  @include flex-between;
+  font-size: $block-text-size;
+}
+.all-works-btn{
+  @include flexbox;
+  cursor: pointer;
+  background: none;
+  border: none;
+  &:after{
+    content: '';
+    background: url(../../img/right154.png) no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  &:active{
+    opacity: 0.5;
+  }
+}
+
+$class-slug: for !default;
+.top-line-gallery{
+  @include flexbox;
+  @for $i from 1 through 6{
+    .#{$class-slug}-#{$i}{
+      background: url(../../img/photo-gallery/#{$i}.png) no-repeat;
+      width: 264px;
+      height: 200px;
+    }
+  }
+}
+.bottom-line-gallery{
+  @include flexbox;
+  margin-bottom: 50px;
+  @for $i from 7 through 12{
+    .#{$class-slug}-#{$i}{
+      background: url(../../img/photo-gallery/#{$i}.png) no-repeat;
+      width: 264px;
+      height: 200px;
+    }
+  }
+}

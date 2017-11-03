@@ -1,0 +1,23 @@
+.story-section{
+  background-color: $main-bg;
+}
+
+.story-block{
+  @include flex-center;
+  &:before{
+    content: '';
+    display: block;
+    width: 240px;
+    height: 230px;
+    background: url(../../img/story-img.png) no-repeat;
+  }
+}
+
+.story-content{
+  width: 520px;
+  @include flexbox;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 100px;
+}
+

@@ -1,0 +1,37 @@
+.welcome-section{
+  background: url(../../img/welcome-bg.png) no-repeat center top;
+  @include full-bg-img;
+}
+
+.welcome-header{
+  h1{
+    @include hidden-text;
+  }
+  @include flex-between;
+  padding-top: 15px;
+}
+
+.nav-list{
+  @include flexbox;
+  margin-top: 15px;
+
+  li{
+    margin-left: 25px;
+    a{
+      font-size: 13px;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: $roboto-font;
+      &:active{
+        color: $color-btn;
+      }
+    }
+  }
+}
+
+.welcome-block{
+  margin-top: 170px;
+  text-align: center;
+}
